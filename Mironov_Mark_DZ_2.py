@@ -1,11 +1,26 @@
-a = [i for i in range(1,1001)]
-b = [i ** 3 for i in a]
-c = sum([i // 7 for i in b])
-print(c)
+a = ['в', '5', 'часов', '17', 'минут', 'температура', 'воздуха', 'была', '+5', 'градусов']
+a [1] = '05'
+a [8] = '+05'
+a.insert(1, '"')
+a.insert(3, '"')
+a.insert(5, '"')
+a.insert(7, '"')
+a.insert(12, '"')
+a.insert(14, '"')
+print(a)
+# если просто использовать метод join между ковычками и цифрами остануться пробелы!
+del a[1]
+del a[2]
+del a[3]
+del a[4]
+del a[8]
+del a[9]
+a [1] = '"05"'
+a [3] = '"17"'
+a [8] = '"+05"'
+b = ' '.join(a)
+print(b)
 
-a = [i for i in range(1,1001)]
-b = [i ** 3 for i in a]
-b [:] = [i + 17 for i in b]
-c = sum([i // 7 for i in b])
-print(c)
+
+
 
